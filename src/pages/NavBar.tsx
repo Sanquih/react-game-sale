@@ -8,10 +8,12 @@ import {
   useDisclosure,
   useColorModeValue,
   Stack,
+  Image,
 } from "@chakra-ui/react";
 import { NavLink as RouterLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import backgroundImage from '/icon.png';
 
 interface Props {
   children: React.ReactNode;
@@ -57,7 +59,9 @@ export default function NavBar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box pointerEvents={"none"}>Game sale</Box>
+            <Box pointerEvents={"none"}>
+              <Image w={50} src={backgroundImage} alt="Icon" />
+            </Box>
             <HStack
               as={"nav"}
               spacing={4}
