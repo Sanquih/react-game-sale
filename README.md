@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+# Game Sale
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This webpage, made with React and libraries such as Chakra UI, Axios, react-query and react-router-dom will help you find games on sales and some jokes.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://react-game-sale.netlify.app
 
-## Expanding the ESLint configuration
+## With this project, I practiced
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **react-query:** to manage de cache.
+- **react-router-dom:** to navigate between pages.
+- **Custom hooks:** to fetch jokes and games on sale from the API.
+- **Axios:** to make HTTP requests to the API.
+- **Chakra UI:** using templates.
+- **Skeletons:** using SkeletonText from Chakra UI while data is loading.
 
-- Configure the top-level `parserOptions` property like this:
+## API used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- https://api.chucknorris.io/
+- https://apidocs.cheapshark.com/
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Development server
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Run `npm run dev` for a dev server. Navigate to http://localhost:5173/. The app will automatically reload if you change any of the source files.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📸 Screenshots
+![image](https://github.com/user-attachments/assets/50d3395f-b0ba-4a87-925a-8b44f79fe8d0)
+![image](https://github.com/user-attachments/assets/fadcf638-322c-48e0-abc4-5c398948b462)
